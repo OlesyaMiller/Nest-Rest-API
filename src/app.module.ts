@@ -10,6 +10,6 @@ import config from './config/keys';
 @Module({
   imports: [ ItemsModule, MongooseModule.forRoot(config.mongoURI) ],
   controllers: [AppController, ItemsController],
-  providers: [AppService, ItemsService],
+  providers: [AppService],
 })
 export class AppModule {}
